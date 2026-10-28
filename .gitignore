@@ -1,0 +1,40 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and OCI config
+.env
+.env.*
+!.env.example
+.oci/
+oci_api_key.pem
+*.pem
+*.key
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+
+# Generated output
+findings.json
+reports/
+evidence/*.json
+!evidence/sample-reports/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
